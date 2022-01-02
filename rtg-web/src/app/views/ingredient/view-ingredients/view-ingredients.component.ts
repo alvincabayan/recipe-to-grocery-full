@@ -19,6 +19,6 @@ export class ViewIngredientsComponent implements OnInit {
   }
 
   
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneak'];
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
 }
