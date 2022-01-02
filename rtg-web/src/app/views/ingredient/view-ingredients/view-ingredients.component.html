@@ -1,0 +1,12 @@
+<div class="view-ingredient-container">
+  <mat-selection-list #ingredients [multiple]="false">
+    <mat-list-option *ngFor="let ingredient of ingredientList" [value]="ingredient.name">
+      {{ingredient.name}}
+    </mat-list-option>
+  </mat-selection-list>
+    
+  <p>
+    Option selected: {{ingredients.selectedOptions.selected[0]?.value}}
+  </p>
+</div>
+  

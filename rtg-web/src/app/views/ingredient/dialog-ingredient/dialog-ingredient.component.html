@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Add Ingredient</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Ingredient Name</mat-label>
+    <input matInput [(ngModel)]="data.name"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Unit Type</mat-label>
+    <input matInput [(ngModel)]="data.unitType"/>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button cdkFocusInitial color="primary" (click)="onAddIngredient()">Ok</button>
+</div>
